@@ -1,3 +1,13 @@
+- [HERANÇA, REESCRITA E POLIMORFISMO](#herança-reescrita-e-polimorfismo)
+  - [9.1 REPETINDO CÓDIGO?](#91-repetindo-código)
+    - [SUPER E SUB CLASSE](#super-e-sub-classe)
+    - [SEMPRE USAR PROTECTED?](#sempre-usar-protected)
+  - [9.2 REESCRITA DE MÉTODO](#92-reescrita-de-método)
+    - [A ANOTAÇÃO @OVERRIDE](#a-anotação-override)
+  - [9.3 INVOCANDO O MÉTODO REESCRITO](#93-invocando-o-método-reescrito)
+  - [9.4 POLIMORFISMO](#94-polimorfismo)
+  - [9.5 UM OUTRO EXEMPLO](#95-um-outro-exemplo)
+
 ## HERANÇA, REESCRITA E POLIMORFISMO
 ### 9.1 REPETINDO CÓDIGO?
 Como toda empresa, nosso banco tem funcionários. Modelemos a classe  Funcionario :
@@ -37,6 +47,7 @@ Existe um jeito, em Java, de relacionarmos uma classe de tal maneira que uma del
 a outra tem. Isso é uma relação de classe mãe e classe filha. No nosso caso, gostaríamos de fazer com
 que o  Gerente  tivesse tudo que um  Funcionario  tem, gostaríamos que ela fosse uma extensão  de
  Funcionario . Fazemos isso por meio da palavra-chave  extends .
+
 ```java
 public class Gerente extends Funcionario {
 private int senha;
